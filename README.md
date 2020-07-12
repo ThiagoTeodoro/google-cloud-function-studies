@@ -1,5 +1,5 @@
 # google-cloud-function-studies
-Estudos utilizando arquitetura Servelless com o Google Cloud Function + Firestore/Datastore
+Estudos utilizando arquitetura Serverless com o Google Cloud Function + Firestore/Datastore
 
 Esse projeto faz uso do framework google-cloud/functions-framework, instaldo da seguinte maneira : 
 
