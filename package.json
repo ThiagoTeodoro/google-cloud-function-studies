@@ -1,0 +1,23 @@
+{
+  "name": "google-cloud-function-studies",
+  "version": "1.0.0",
+  "description": "Projeto de estudos do Google Cloud Function Serveless arquitetura.",
+  "main": "index.js",
+  "scripts": {
+    "start:helloWorld": "functions-framework --target=helloWorld",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoTeodoro/google-cloud-function-studies.git"
+  },
+  "author": "Thiago Teodoro Rodrigues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiagoTeodoro/google-cloud-function-studies/issues"
+  },
+  "homepage": "https://github.com/ThiagoTeodoro/google-cloud-function-studies#readme",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.6.0"
+  }
+}
