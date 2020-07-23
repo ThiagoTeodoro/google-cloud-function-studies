@@ -1,3 +1,10 @@
+EXPLICAR NO TESTO ONDE ESTÁ O CODIGO COM O LINK PARA O CÓDIGO 
+
+CORRIGIR POSSIVEIS ERROS DE PORTUGUES
+
+ADICIOANR A CONCLUSÃO ENVIADA PELO TELEGRAM
+
+
 # google-cloud-function-studies
 Estudos utilizando arquitetura Serverless com o Google Cloud Function + Firestore/Datastore
 
@@ -31,5 +38,3 @@ gcloud functions deploy "helloWorld" --trigger-http --runtime="nodejs10"
 O projeto possui um exemplo em getAllEstado e getEstado exemplificando como conectar e obter dados do Google Cloud Firestore/Datastore. Essas funções fazem uso da biblioteca @google-cloud/datastore.
 
 Importante lembrar que para que o Firestore/Datastore funcione localmente na sua maquina é necessário que váriavel de ambiente $GOOGLE_APPLICATION_CREDENTIALS esteja apontando para seu arquivo keyFile.json obtido no Google Cloud Console.
-
-

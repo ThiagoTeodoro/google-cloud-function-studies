@@ -1,11 +1,6 @@
-exports.helloWorld = (req, res) => {
-    res.send('Essa é a minha primeira função no Google Cloud Function!');
-}
-
-exports.multipleTarget = (req, res) => {
-    res.send('Essa é a minha segunda função no Google Cloud Function!');
-}
-
+/**
+ * Função responsável por consultar via GET todos os estdos gravados no Datastore
+ */
 exports.getAllEstado = async (req, res) => {
 
     let result = [];
@@ -32,4 +27,38 @@ exports.getAllEstado = async (req, res) => {
     }
 
     res.json(result).status(status);
+}
+
+/**
+ * Função responsável por recuperar via POST um Estado pela sua key gravada no Datastore.
+ */
+exports.getEstadoByKey = async (req, res) => {
+
+    let result = [];
+    let status = 200;
+
+    try {
+        
+        const {key} = req.body;
+        
+        const {Datastore} = require('@google-cloud/datastore');    
+        const datastore = new Datastore({
+             projectId: "thiago-studies-2020"
+        });
+
+        const query = datastore.createQuery('Estado').filter("__key__", "=", datastore.key(['Estado', key]));    
+        const [returns] = await datastore.runQuery(query);        
+                
+
+        for (let aux of returns) {
+
+            result.push(aux);
+        }
+    } catch(error) {
+        
+        status = 500;
+        throw new Error(`Ocorreu um erro inesperado em getByEstado. Exception : ${error}`)
+    }
+
+    res.json(result).status(status);    
 }

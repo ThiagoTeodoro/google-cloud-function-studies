@@ -1,0 +1,13 @@
+# Index specification
+#
+# To setup your project, execute:
+#
+#   gcloud datastore create-indexes index.yaml
+
+indexes:
+
+    - kind: Estado
+      properties:
+      - name: UF
+      - name: Descricao
+        direction: desc
