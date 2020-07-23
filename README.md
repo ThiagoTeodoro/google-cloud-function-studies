@@ -143,7 +143,7 @@ Considerando isso, e funções com o modelo dois da tabela que é o mais utiliza
 
 ** Esses cálculos é para um sistema baseado em 256MB, 400MHz com volumes de uma requisição por segundo em média** 
 
-Pontos de Atenção : 
+### Pontos de Atenção
 
 Embora no quesito organização de micro-serviços e preço o Google Cloud Functions se mostre extremamente atrativo, há pontos a se considerar.
 
