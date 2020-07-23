@@ -6,7 +6,7 @@
   "scripts": {
     "start:helloWorld": "functions-framework --target=helloWorld",
     "start:getAllEstado": "functions-framework --target=getAllEstado",
-    "start:getEstadoByKey": "functions-framework --target=getEstadoByKey",
+    "start:getEstadoByUf": "functions-framework --target=getEstadoByUf",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

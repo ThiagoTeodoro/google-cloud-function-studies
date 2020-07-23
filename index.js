@@ -30,9 +30,9 @@ exports.getAllEstado = async (req, res) => {
 }
 
 /**
- * Função responsável por recuperar via POST um Estado pela sua key gravada no Datastore.
+ * Função responsável por recuperar via POST um Estado pela sua UF gravada no Datastore.
  */
-exports.getEstadoByKey = async (req, res) => {
+exports.getEstadoByUf = async (req, res) => {
 
     let result = [];
     let status = 200;
