@@ -12,7 +12,7 @@ exports.getAllEstado = async (req, res) => {
         const datastore = new Datastore();
 
 
-        const query = datastore.createQuery('Estado');
+        const query = datastore.createQuery('Estados');
         const [estados] = await datastore.runQuery(query);        
 
         
@@ -39,14 +39,14 @@ exports.getEstadoByKey = async (req, res) => {
 
     try {
         
-        const {key} = req.body;
+        const {uf} = req.body;
         
         const {Datastore} = require('@google-cloud/datastore');    
         const datastore = new Datastore({
              projectId: "thiago-studies-2020"
         });
 
-        const query = datastore.createQuery('Estado').filter("__key__", "=", datastore.key(['Estado', key]));    
+        const query = datastore.createQuery('Estados').filter("UF", "=", uf);    
         const [returns] = await datastore.runQuery(query);        
                 
 
